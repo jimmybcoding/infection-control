@@ -6,7 +6,7 @@ const Surgery: React.FC = () => {
   return (
     <div className="flex flex-col gap-4 w-4/5 mx-auto min-w-96">
       <div className="p-2 font-bold text-left text-2xl shadow-questions border-4 border-purple-400 font-mono">
-        Surgical Site Infections (SSI)
+        Surgical Site Infections - SSI
       </div>
       <p>
         A surgical site infection is an infection that occurs after surgery in the part of the body where the surgery took place. Most surgical site infections are caused by the patient's own bacterial flora. Some surgical site infections are more serious and can involve tissues under the skin, organs, or implanted material.
@@ -17,7 +17,7 @@ const Surgery: React.FC = () => {
           <li>Are an older adult</li>
           <li>Have a weakened immune system or other serious health problem such as diabetes</li>
           <li>Smoke</li>
-          <li>Are malnourished (don't eat enough healthy foods)</li>
+          <li>Are malnourished</li>
           <li>Are very overweight</li>
         </ul>
       </div>

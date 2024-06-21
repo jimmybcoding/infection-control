@@ -35,13 +35,13 @@ const Page: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center mx-auto mt-6 w-2/3 min-w-72 font-bold gap-2 p-2">
       <div className='p-2 font-bold text-left text-2xl shadow-questions border-4 border-purple-400 font-mono'>
-        Central Line-Associated Bloodstream Infection (CLI)
+        Central Line-Associated Bloodstream Infection - CLI
       </div>
       <h1 className="font-bold text-2xl">
         What is a CLI?
       </h1>
       <p>
-        CLI occurs when a central venous catheter (or "line") placed into a patient's vein gets infected. This happens when bacteria grow in the line and spreads to the patient's bloodstream.
+        CLI occurs when a central venous catheter or "line" placed into a patient's vein gets infected. This happens when bacteria grow in the line and spreads to the patient's bloodstream.
       </p>
       <form onSubmit={onSubmit} className="flex flex-col gap-2">
         <div className='p-2 font-bold text-left text-2xl shadow-questions border-4 border-purple-400 font-mono'>
