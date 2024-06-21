@@ -9,7 +9,7 @@ const Surgery: React.FC = () => {
         Surgical Site Infections - SSI
       </div>
       <p>
-        A surgical site infection is an infection that occurs after surgery in the part of the body where the surgery took place. Most surgical site infections are caused by the patient's own bacterial flora. Some surgical site infections are more serious and can involve tissues under the skin, organs, or implanted material.
+        {`A surgical site infection is an infection that occurs after surgery in the part of the body where the surgery took place. Most surgical site infections are caused by the patient's own bacterial flora. Some surgical site infections are more serious and can involve tissues under the skin, organs, or implanted material.`}
       </p>
       <div>
         <p className="font-bold">The risk of acquiring a surgical site infection is higher if you:</p>
