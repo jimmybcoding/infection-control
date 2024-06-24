@@ -6,7 +6,7 @@ Chart.register(CategoryScale);
 
 const Hand: React.FC  = () => {
   return (
-    <div className='mx-auto p-2 w-4/5 min-w-min shadow-custom'>
+    <div className='mx-auto p-2 w-4/5 min-w-96 shadow-custom'>
       <p className='font-bold text-2xl'>
         HHS Hand Hygiene Percent Compliance Results by Site
       </p>
@@ -31,7 +31,7 @@ const Hand: React.FC  = () => {
           {
           label:"All Sites",
           pointStyle: 'rectRounded',
-          barThickness: 15,
+          barThickness: 10,
           data: [79,84,82,82],
           backgroundColor: ["black","black","black","black"],
           borderColor: ["black","black","black","black"],
@@ -40,7 +40,7 @@ const Hand: React.FC  = () => {
           {
             label:"HGH",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [76,81,82,81],
             backgroundColor: ["green","green","green","green"],
             borderColor: ["black","black","black","black"],
@@ -49,7 +49,7 @@ const Hand: React.FC  = () => {
           {
             label:"JCC",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [75,84,81,80],
             backgroundColor: ["purple","purple","purple","purple"],
             borderColor: ["black","black","black","black"],
@@ -58,7 +58,7 @@ const Hand: React.FC  = () => {
           {
             label:"MUMC",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [88,87,84,86], 
             backgroundColor: ["orange","orange","orange","orange"],
             borderColor: ["black","black","black","black"],
@@ -67,7 +67,7 @@ const Hand: React.FC  = () => {
           {
             label:"SPH",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [84,88,83,82], 
             backgroundColor: ["blue","blue","blue","blue"],
             borderColor: ["black","black","black","black"],
@@ -76,7 +76,7 @@ const Hand: React.FC  = () => {
           {
             label:"WLM",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [71,68,66,73],
             backgroundColor: ["red","red","red","red"],
             borderColor: ["black","black","black","black"],
@@ -115,7 +115,7 @@ const Hand: React.FC  = () => {
           {
           label:"All Sites",
           pointStyle: 'rectRounded',
-          barThickness: 15,
+          barThickness: 10,
           data: [88,88,87,86],
           backgroundColor: ["black","black","black","black"],
           borderColor: ["black","black","black","black"],
@@ -124,7 +124,7 @@ const Hand: React.FC  = () => {
           {
             label:"HGH",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [87,88,86,85],
             backgroundColor: ["green","green","green","green"],
             borderColor: ["black","black","black","black"],
@@ -133,7 +133,7 @@ const Hand: React.FC  = () => {
           {
             label:"JCC",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [87,87,88,87],
             backgroundColor: ["purple","purple","purple","purple"],
             borderColor: ["black","black","black","black"],
@@ -142,7 +142,7 @@ const Hand: React.FC  = () => {
           {
             label:"MUMC",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [91,87,87,87], 
             backgroundColor: ["orange","orange","orange","orange"],
             borderColor: ["black","black","black","black"],
@@ -151,7 +151,7 @@ const Hand: React.FC  = () => {
           {
             label:"SPH",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [89,91,85,84], 
             backgroundColor: ["blue","blue","blue","blue"],
             borderColor: ["black","black","black","black"],
@@ -160,7 +160,7 @@ const Hand: React.FC  = () => {
           {
             label:"WLM",
             pointStyle: 'rectRounded',
-            barThickness: 15,
+            barThickness: 10,
             data: [87,82,82,84],
             backgroundColor: ["red","red","red","red"],
             borderColor: ["black","black","black","black"],
