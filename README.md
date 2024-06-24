@@ -3,7 +3,7 @@ Infection Control Quality Indicator Guide.
 I wanted to do a personal project to display continued growth of my react and tailwind skills, as well as gain more familiarity with the nextjs app router and file structure.
 I used chartjs to display real hospital data.
 
-To view the app live please visit: https://infection-control-3fbhza4q0-james-projects-9ee91a3e.vercel.app/
+To view the app live please visit: https://infection-control.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
