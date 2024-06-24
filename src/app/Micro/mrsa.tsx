@@ -78,8 +78,17 @@ const Mrsa: React.FC = () => {
           sizes="100vw"
           width={100}
           height={100}
-          className="object-contain rounded-lg"
+          className="object-contain rounded-lg mb-8"
         />
+         <Image
+            src="/caution.jpg"
+            layout="responsive"
+            alt="MRSA/VRE contact precautions poster"
+            sizes="100vw"
+            width={100}
+            height={100}
+            className="object-contain rounded-lg"
+          /> 
       </div>
       <ul className="w-3/5">{listItems}</ul>
     </div>
