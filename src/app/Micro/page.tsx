@@ -32,17 +32,6 @@ const Micro: React.FC = () => {
             className="object-contain rounded-lg"
           />
         </div>
-        <div className="w-1/5">
-          <Image
-            src="/swab.jpg"
-            layout="responsive"
-            alt="MRSA/VRE duo swab"
-            sizes="100vw"
-            width={100}
-            height={100}
-            className="object-contain ml-2 rounded-lg"
-          />   
-        </div>
       </div>
       <div className="w-screen min-w-96 mx-auto py-5 text-center bg-red-400">
         <p className="mb-2 text-xs text-gray-700 font-bold">

@@ -87,8 +87,17 @@ const Vre: React.FC = () => {
             sizes="100vw"
             width={100}
             height={100}
-            className="object-contain rounded-lg"
-          /> 
+            className="object-contain rounded-lg mb-8"
+          />
+              <Image
+            src="/swab.jpg"
+            layout="responsive"
+            alt="MRSA/VRE swab"
+            sizes="100vw"
+            width={100}
+            height={100}
+            className="object-contain rounded-lg mb-8"
+          />  
       </div>
       <ul className="w-3/5">{listItems}</ul>
     </div>
