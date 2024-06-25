@@ -32,7 +32,7 @@ const Nav: React.FC = () => {
           </p>
         </div>
         <div
-          className="fixed top-0 flex flex-col gap-2 bg-gray-800 text-slate-200 h-screen w-1/5 min-w-max rounded-r-lg pr-5"
+          className="z-10 fixed top-0 flex flex-col gap-2 bg-gray-800 text-slate-200 h-screen w-1/5 min-w-max rounded-r-lg pr-5"
           onMouseLeave={() => setMenuOpen(false)}
         >
           
