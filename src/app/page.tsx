@@ -2,15 +2,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
         <Image
           src='/banner.jpg'
-          layout="responsive"
+          fill
           quality={100}
-          width={100}
-          height={100}
           sizes="100vw"
-          className="object-cover min-w-96"
+          className="-z-10 object-cover min-w-96"
           alt='picture of a hand with bacteria and viruses'
         />
     </main>

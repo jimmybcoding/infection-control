@@ -15,11 +15,12 @@ const Page: React.FC = () => {
       alert('No dividing by zero, friend');
       return;
     }
-    const ratePlaceHolder: number = cliDays / newCliCases *100
-    setRate(ratePlaceHolder);
+    const ratePlaceHolder: number = cliDays / newCliCases  * 100
+    setRate(ratePlaceHolder.toFixed(2));
   };
 
-
+/*   const ratePlaceHolder: number = cdiffCases / cdiffDays * 1000
+    setRate(ratePlaceHolder.toFixed(2)); */
   const onCaseChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const numericValue = value ? parseFloat(value) : 0;
@@ -33,7 +34,7 @@ const Page: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center mx-auto mt-6 w-2/3 min-w-72 font-bold gap-2 p-2">
+    <div className="flex flex-col justify-center items-center mx-auto mt-6 w-2/3 min-w-72 min-h-screen font-bold gap-2 p-2">
       <div className='p-2 font-bold text-left text-2xl shadow-questions border-4 border-purple-400 font-mono'>
         Central Line-Associated Bloodstream Infection - CLI
       </div>
@@ -65,7 +66,7 @@ const Page: React.FC = () => {
           Submit
         </button>
         <p className="font-extrabold text-2xl">
-          Rate: {Math.round(rate)}%
+          Rate: {rate}%
         </p>
       </form>
       <Image
