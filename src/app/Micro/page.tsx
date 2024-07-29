@@ -15,7 +15,7 @@ const Micro: React.FC = () => {
 
   return (
     <>
-      <div className="w-full min-w-96 flex justify-center items-center mx-auto bg-red-400">
+      <div className="w-full min-w-96 min-h-screen flex justify-center items-center mx-auto bg-red-400">
         <div className="w-2/5 text-center text-3xl font-bold text-gray-700">
           <p className="mt-10 text-gray-700 font-mono">
             Healthcare Associated
