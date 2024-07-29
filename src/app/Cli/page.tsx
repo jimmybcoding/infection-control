@@ -5,7 +5,7 @@ import { useState } from "react";
 const Page: React.FC = () => {
   const [newCliCases, setNewCliCases] = useState<number>(0);
   const [cliDays, setCliDays] = useState<number>(0);
-  const [rate, setRate] = useState<number>(0);
+  const [rate, setRate] = useState<string>();
 
 
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -19,8 +19,6 @@ const Page: React.FC = () => {
     setRate(ratePlaceHolder.toFixed(2));
   };
 
-/*   const ratePlaceHolder: number = cdiffCases / cdiffDays * 1000
-    setRate(ratePlaceHolder.toFixed(2)); */
   const onCaseChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const numericValue = value ? parseFloat(value) : 0;
