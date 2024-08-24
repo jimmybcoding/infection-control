@@ -14,46 +14,48 @@ const Micro: React.FC = () => {
   };
 
   return (
-    <>
-      <div className="w-full min-w-96 min-h-screen flex justify-center items-center mx-auto bg-red-400">
-        <div className="w-2/5 text-center text-3xl font-bold text-gray-700">
-          <p className="mt-10 text-gray-700 font-mono">
-            Healthcare Associated
-            <br />
-            MRSA/VRE
-          </p>
-          <Image
-            src="/mrsa.jpg"
-            layout="responsive"
-            alt="Agar plate with MRSA growing"
-            sizes="100vw"
-            width={100}
-            height={100}
-            className="object-contain rounded-lg"
-          />
-        </div>
+    <div className="min-h-[50vh] flex flex-col justify-center items-center bg-gradient-to-r from-red-400 via-slate-300 to-slate-200">
+      <div className="w-full max-w-lg text-center">
+        <p className="mt-10 text-3xl font-bold text-gray-700 font-mono">
+          Healthcare Associated
+          <br />
+          MRSA/VRE
+        </p>
+        <Image
+          src="/mrsa.jpg"
+          alt="Agar plate with MRSA growing"
+          sizes="100vw"
+          width={100}
+          height={100}
+          className="w-1/2 h-auto rounded-lg my-5 mx-auto"
+        />
       </div>
-      <div className="w-screen min-w-96 mx-auto py-5 text-center bg-red-400">
-        <p className="mb-2 text-xs text-gray-700 font-bold">
+      <div className="mt-5 text-center">
+        <p className="text-xs text-gray-700 font-bold mb-3">
           Click below to learn more
         </p>
-        <button
-          className="flex justify-center w-1/5 min-w-max py-1 px-2 mx-auto my-1 border-2 border-gray-700 bg-gray-700 text-red-400 text-3xl rounded-md font-bold"
-          onClick={() => handleButtonClick(pickedBacteria != "MRSA" ? "MRSA" : "")}
-        >
-          MRSA
-          {pickedBacteria === "MRSA" ? <MdArrowDropUp/> : <MdArrowDropDown />}
-        </button>
-        <button
-          className="flex justify-center w-1/5 min-w-max py-1 px-2 mx-auto my-1 border-2 border-gray-700 bg-gray-700 text-red-400 text-3xl rounded-md font-bold"
-          onClick={() => handleButtonClick(pickedBacteria != "VRE" ? "VRE" : "")}
-        >
-          VRE
-          {pickedBacteria === "VRE" ? <MdArrowDropUp/> : <MdArrowDropDown />}
-        </button>
+        <div className="space-y-2">
+          <button
+            className="flex items-center justify-center w-40 py-2 px-4 border-2 border-gray-700 bg-gray-700 text-red-400 text-xl rounded-md font-bold mx-auto"
+            onClick={() => handleButtonClick(pickedBacteria !== "MRSA" ? "MRSA" : "")}
+          >
+            MRSA
+            {pickedBacteria === "MRSA" ? <MdArrowDropUp className="ml-2" /> : <MdArrowDropDown className="ml-2" />}
+          </button>
+          <button
+            className="flex items-center justify-center w-40 py-2 px-4 border-2 border-gray-700 bg-gray-700 text-red-400 text-xl rounded-md font-bold mx-auto"
+            onClick={() => handleButtonClick(pickedBacteria !== "VRE" ? "VRE" : "")}
+          >
+            VRE
+            {pickedBacteria === "VRE" ? <MdArrowDropUp className="ml-2" /> : <MdArrowDropDown className="ml-2" />}
+          </button>
+        </div>
       </div>
-      {pickedBacteria === "MRSA" ? <Mrsa /> : pickedBacteria === "VRE" ? <Vre /> : null}
-    </>
+      <div className="mt-5">
+        {pickedBacteria === "MRSA" && <Mrsa />}
+        {pickedBacteria === "VRE" && <Vre />}
+      </div>
+    </div>
   );
 };
 
