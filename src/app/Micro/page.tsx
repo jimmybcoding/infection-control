@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Mrsa from './mrsa';
 import Vre from './vre';
-import { MdArrowDropDown } from 'react-icons/md';
+import { MdArrowDropDown, MdArrowDropUp } from 'react-icons/md';
 
 const Micro: React.FC = () => {
   const [pickedBacteria, setPickedBacteria] = useState<string>("");
@@ -39,17 +39,17 @@ const Micro: React.FC = () => {
         </p>
         <button
           className="flex justify-center w-1/5 min-w-max py-1 px-2 mx-auto my-1 border-2 border-gray-700 bg-gray-700 text-red-400 text-3xl rounded-md font-bold"
-          onClick={() => handleButtonClick("MRSA")}
+          onClick={() => handleButtonClick(pickedBacteria != "MRSA" ? "MRSA" : "")}
         >
           MRSA
-          <MdArrowDropDown />
+          {pickedBacteria === "MRSA" ? <MdArrowDropUp/> : <MdArrowDropDown />}
         </button>
         <button
           className="flex justify-center w-1/5 min-w-max py-1 px-2 mx-auto my-1 border-2 border-gray-700 bg-gray-700 text-red-400 text-3xl rounded-md font-bold"
-          onClick={() => handleButtonClick("VRE")}
+          onClick={() => handleButtonClick(pickedBacteria != "VRE" ? "VRE" : "")}
         >
           VRE
-          <MdArrowDropDown />
+          {pickedBacteria === "VRE" ? <MdArrowDropUp/> : <MdArrowDropDown />}
         </button>
       </div>
       {pickedBacteria === "MRSA" ? <Mrsa /> : pickedBacteria === "VRE" ? <Vre /> : null}
