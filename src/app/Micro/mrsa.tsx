@@ -59,7 +59,7 @@ const Mrsa: React.FC = () => {
         onClick={() => handlePanelClick(index)}
       >
         {data.question}
-        {activePanel.includes(index) ? <MdArrowDropUp /> : <MdArrowDropDown />}
+        {activePanel.includes(index) ? <MdArrowDropUp className='h-5 min-w-fit' /> : <MdArrowDropDown className='h-5 min-w-fit'/>}
       </li>
       {activePanel.includes(index) && <div className="my-3">{data.answer}</div>}
     </div>
