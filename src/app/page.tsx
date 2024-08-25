@@ -5,10 +5,10 @@ export default function Home() {
     <main className="min-h-screen">
         <Image
           src='/banner.jpg'
-          fill
-          quality={100}
           sizes="100vw"
-          className="-z-10 object-cover min-w-96"
+          width={100}
+          height={100}
+          className="w-full h-auto"
           alt='picture of a hand with bacteria and viruses'
         />
     </main>
