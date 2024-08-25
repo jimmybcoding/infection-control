@@ -14,7 +14,8 @@ const Micro: React.FC = () => {
   };
 
   return (
-    <div className="min-h-[50vh] flex flex-col justify-center items-center bg-gradient-to-r from-red-400 via-slate-300 to-slate-200">
+  <div className='min-h-screen container'>
+    <div className="min-h-[50vh] p-3 flex flex-col justify-center items-center bg-gradient-to-r from-red-400 via-slate-300 to-slate-200">
       <div className="w-full max-w-lg text-center">
         <p className="mt-10 text-3xl font-bold text-gray-700 font-mono">
           Healthcare Associated
@@ -56,6 +57,7 @@ const Micro: React.FC = () => {
         {pickedBacteria === "VRE" && <Vre />}
       </div>
     </div>
+  </div>
   );
 };
 
