@@ -32,6 +32,7 @@ const Page: React.FC = () => {
   }
 
   return (
+  <div className="min-h-screen">  
     <div className="flex flex-col justify-center items-center mx-auto mt-6 w-2/3 min-w-72 min-h-screen font-bold gap-2 p-2">
       <div className='p-2 font-bold text-left text-2xl shadow-questions border-4 border-purple-400 font-mono'>
         Central Line-Associated Bloodstream Infection - CLI
@@ -75,6 +76,14 @@ const Page: React.FC = () => {
         className="-z-10 object-cover opacity-30"
       />
     </div>
+    <Image
+        src="/cli.jpg"
+        sizes="100vw"
+        fill
+        alt='Central Line Diagram'
+        className="-z-10 object-cover opacity-40"
+      />
+  </div>
   );
 }
 

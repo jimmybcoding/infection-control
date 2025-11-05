@@ -3,9 +3,8 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <div className="relative flex flex-col justify-center w-full h-20 mt-5 text-center bg-slate-800 text-slate-100">
-      <div className="absolute bottom-0 inset-x-0">
-        <p className="border-b-2 border-slate-700 font-thin">
+    <div className="flex flex-col justify-center w-full h-20 text-center bg-gradient-to-r to-emerald-600 from-emerald-600 via-slate-900 text-slate-100">
+        <p className="font-thin">
           Designed by Jimmy B
         </p>
         <Link 
@@ -15,9 +14,8 @@ const Footer: React.FC = () => {
           <FaGithub className="mx-auto h-6 w-6" />
         </Link>
         <p>
-          2024
+          {new Date().getFullYear()}
         </p> 
-      </div>
     </div>
   )
 }
